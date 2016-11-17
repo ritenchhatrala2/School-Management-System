@@ -1,0 +1,73 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 23, 2013 at 10:41 AM
+-- Server version: 5.1.37
+-- PHP Version: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `wadproject`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `material`
+--
+
+CREATE TABLE IF NOT EXISTS `material` (
+  `srno` int(11) NOT NULL AUTO_INCREMENT,
+  `category` varchar(100) NOT NULL,
+  `faculty` varchar(50) NOT NULL,
+  `subject` varchar(30) NOT NULL,
+  `udate` date NOT NULL,
+  `path` varchar(1000) NOT NULL,
+  PRIMARY KEY (`srno`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `material`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student`
+--
+
+CREATE TABLE IF NOT EXISTS `student` (
+  `srno` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `grno` varchar(50) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `rollno` varchar(50) NOT NULL,
+  `dob` date NOT NULL,
+  `address` varchar(500) NOT NULL,
+  `mobno` double NOT NULL,
+  `phneno` double NOT NULL,
+  `emailid` varchar(50) NOT NULL,
+  `std` varchar(30) NOT NULL,
+  `bgroup` varchar(10) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `p10` varchar(10) NOT NULL,
+  `medium` varchar(20) NOT NULL,
+  `batch` varchar(20) NOT NULL,
+  `age` int(11) NOT NULL,
+  PRIMARY KEY (`srno`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`srno`, `username`, `password`, `grno`, `name`, `rollno`, `dob`, `address`, `mobno`, `phneno`, `emailid`, `std`, `bgroup`, `city`, `p10`, `medium`, `batch`, `age`) VALUES
+(1, '10cp630', '1', '666', 'srv', '166', '2013-04-19', 'fhdjka', 9408526001, 456456225, 'ritenchhatrala2@gmail.com', '12', 'a+', 'rajkot', '88', 'gujarati', 'h5', 20),
+(2, '', '1', '666', '', '166', '0000-00-00', '', 0, 0, '', 'eleventh', 'A+', '', '', '', '', 0),
+(3, '10cp643', '', '777', 'riiten', '555', '0000-00-00', '', 645566, 2165465, '', 'eleventh', 'A+', '', '', '', 'b7', 0);

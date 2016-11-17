@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="../js/mootools-1.2.3.1-more.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="../js/setup.js"></script>
+<link href="../homepage.css" rel="stylesheet" type="text/css" />
+<link href="cssv2/slides.css" rel="stylesheet" type="text/css" />
+<script>
+
+/***********************************************
+* Dynamic Ajax Content- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var loadedobjects=""
+var rootdomain="http://"+window.location.hostname
+
+function ajaxpage(url, containerid){
+var page_request = false
+if (window.XMLHttpRequest) // if Mozilla, Safari etc
+page_request = new XMLHttpRequest()
+else if (window.ActiveXObject){ // if IE
+try {
+page_request = new ActiveXObject("Msxml2.XMLHTTP")
+} 
+catch (e){
+try{
+page_request = new ActiveXObject("Microsoft.XMLHTTP")
+}
+catch (e){}
+}
+}
+else
+return false
+page_request.onreadystatechange=function(){
+loadpage(page_request, containerid)
+}
+page_request.open('GET', url, true)
+page_request.send(null)
+}
+
+function loadpage(page_request, containerid){
+if (page_request.readyState == 4 && (page_request.status==200 || window.location.href.indexOf("http")==-1))
+document.getElementById(containerid).innerHTML=page_request.responseText
+}
+
+function loadobjs(){
+if (!document.getElementById)
+return
+for (i=0; i<arguments.length; i++){
+var file=arguments[i]
+var fileref=""
+if (loadedobjects.indexOf(file)==-1){ //Check to see if this object has not already been added to page before proceeding
+if (file.indexOf(".js")!=-1){ //If object is a js file
+fileref=document.createElement('script')
+fileref.setAttribute("type","text/javascript");
+fileref.setAttribute("src", file);
+}
+else if (file.indexOf(".css")!=-1){ //If object is a css file
+fileref=document.createElement("link")
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", file);
+}
+}
+if (fileref!=""){
+document.getElementsByTagName("head").item(0).appendChild(fileref)
+loadedobjects+=file+" " //Remember this object as being already added to page
+}
+}
+}
+
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 36px;
+	color: #0000FF;
+}
+.style3 {font-size: 36px; color: #0000FF; font-weight: bold; }
+.style4 {font-size: 24px}
+.style5 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.style6 {font-size: 18px; font-weight: bold; color: #FFFFFF; }
+.style7 {color: #FFFFFF}
+-->
+</style>
+<link href="../sis.css" rel="stylesheet" type="text/css" />
+<link href="../left_nav.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="container">
+<div id="globalheader">
+<ul id="globalnav">
+<li><a href="#">riten</a></li>
+<li><a href="#">riten</a></li>
+<li><a href="#">riten</a></li>
+</ul>
+</div>
+<div class="header">
+  <div id="logo">
+    <div align="center">
+      <p class="style5">&nbsp;</p>
+      <p class="style6">Logo</p>
+    </div>
+  </div>
+</div>
+<ul id="mainnav">
+<li ><a href="../home.php">Home&nbsp;&nbsp;<span>&nbsp;</span></a></li>
+
+<li>
+  <a href="result.php" class="global-contactus">Result&nbsp;&nbsp;<span>&nbsp;</span></a></li>
+<li>
+  <a href="facility.php" class="global-contactus">Facilities&nbsp;&nbsp;<span>&nbsp;</span></a></li>
+<li>
+ <a href="faculty.php" class="global-contactus">Faculties&nbsp;&nbsp;<span>&nbsp;</span></a></li>
+ <li><a href="contactus.php" class="global-contactus">Contact Us&nbsp;&nbsp;<span>&nbsp;</span></a></li>
+<li><a href="sis.php" class="global-contactus">SIS&nbsp;&nbsp;<span>&nbsp;</span></a></li>
+
+</ul> 
+<div id="left_nav">
+<div class="narrow">
+<ul class="secondarynav">
+<table class="nav2_2 zz2_LeftNavMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="width:100%;"><a class="zz2_LeftNavMenu_1 nav2_2 zz2_LeftNavMenu_3" href="result.php">2013-14</a></td>
+			</tr>
+		</table>
+		<table class="nav2_2 zz2_LeftNavMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="width:100%;"><a class="zz2_LeftNavMenu_1 nav2_2 zz2_LeftNavMenu_3" href="#"><font color="#FF0000">2012-13</font></a></td>
+			</tr>
+		</table>
+		<table class="nav2_2 zz2_LeftNavMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="width:100%;"><a class="zz2_LeftNavMenu_1 nav2_2 zz2_LeftNavMenu_3" href="result_2011.php">2011-12</a></td>
+			</tr>
+		</table>
+		<table class="nav2_2 zz2_LeftNavMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="width:100%;"><a class="zz2_LeftNavMenu_1 nav2_2 zz2_LeftNavMenu_3" href="result_2010.php">2010-11</a></td>
+			</tr>
+		</table>
+		<table class="nav2_2 zz2_LeftNavMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="width:100%;"><a class="zz2_LeftNavMenu_1 nav2_2 zz2_LeftNavMenu_3" href="result_2009.php">2009-10</a></td>
+			</tr>
+		</table>
+		
+		</table></ul>
+</div>
+</div>
+<div id="content11">
+<center><font color="#1A8CCE" size="+3">Result 2012-13</font></center>
+<div id="content12">
+<table width="80%" height="389" border="0" cellpadding="0">
+<tr>
+<td height="331" colspan="2"><img src="../imagesv2/rotate-4.jpg" width="560" height="220" /></td>
+
+</tr>
+
+<tr>
+<td width="12%"><img src="../imagesv2/pdf.jpe" width="50" height="50" /></td><td width="88%"><a href="atm.pdf" target="_blank"><font color="#1A8CCE" size="+1" style="text-align:center">Download Result 2012-2013</font></a></td></tr>
+
+</table>
+
+
+</div>
+</div>
+<div class="f1r">
+<ul>
+<center><a href="../home.php"><li id="foot"><font color="#FFFFFF">Home</font></li></a>
+
+
+ &nbsp;&nbsp;|&nbsp;&nbsp; <a href="result.php"><li id="foot"><font color="#FFFFFF">Result</font></li></a>
+
+  &nbsp;&nbsp;|&nbsp;&nbsp;<a href="facility.php" ><li id="foot"><font color="#FFFFFF">Facilities</font></li></a>
+ &nbsp;&nbsp;|&nbsp;&nbsp;<a href="faculty.php"><li id="foot"><font color="#FFFFFF">Faculties</font></li></a>  
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href="contactus.php"><li id="foot"><font color="#FFFFFF">Contact Us</font></li></a>             
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href="sis.php"><li id="foot"><font color="#FFFFFF">SIS</font></li></a></center></ul>
+<center>
+  <font color="#fffff" face="Comic Sans MS, cursive">copyright © 2013 All Right Reserved</font>
+  </center>
+</div>
+</div>
+</body>
+</html>

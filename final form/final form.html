@@ -1,0 +1,55 @@
+<head>
+   
+   
+   <script language="javaScript" type="text/javascript" src="calendar.js" >
+ 
+
+
+ 
+</script>
+   <link href="calendar.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#CCCCCC" style="z-index:0">
+    
+     
+
+    <form action="submit.htm" name="frm1" onSubmit="return validate_required()" method="post">
+    <fieldset> <legend>
+Student Info:</legend>
+Name:<input type="text" id="f_name" size="30">&nbsp; &nbsp;<input type="text" id="m_name" size="30"> &nbsp;&nbsp;<input type="text" id="l_name" size="30"><br/>
+Address:<textarea id="add" cols="30" rows="10"></textarea><br/>
+Date Of Birth: <input id="dob" type="date" name="dob" > <br/>
+Phone No:<input type="text" id="ph_no" size="30"><br/>
+Mobile No:<input type="text" id="mb_no" name="mb_no" size="30"><br/>
+Email Id: <input type="text" id="email" size="30"><br/>
+Medium: <select>
+<option id="english" value="english">English</option>
+<option id="Gujarati" value="gujarati">Gujarati</option> </select>&nbsp;
+Standard: <select>
+<option id="eleventh" value="eleventh">11</option>
+<option id="twelth" value="twelth">12</option> </select><br/>
+10<sup>th</sup>Percentage:<input type="text" id="per" size="30"><br/>
+
+Age: <input type="text" id="age" name="age" size="30"><br>
+City: <input type="text" id="city" size="30"><br>
+Blood group: <select>
+<option id="A+" value="A+">A+</option>
+<option id="A-" value="A-">A-</option>
+<option id="B+" value="B+">B+</option>
+<option id="B-" value="B-">B-</option>
+<option id="AB+" value="AB+">AB+</option>
+<option id="AB-" value="AB-">Ab-</option>
+<option id="O+" value="O+">O+</option>
+<option id="O-" value="O-">O-</option>
+</select><br/>
+
+
+
+
+<input type="submit" value="Submit">
+<input type="reset" value="reset"></fieldset></form>
+
+	
+   
+</body>
+</html>

@@ -1,0 +1,578 @@
+/* CSS Document */
+.narrow {
+	width: 180px;
+	margin-right: 10px;
+	float: left;
+	margin-top:42px;
+}
+.secondarynav, .tertiarynav {
+	list-style: none;
+	width: 180px;
+	margin-left: 0;
+	padding-left: 0;
+	margin-bottom: 8px;
+	margin-top: 10px;
+	border-right: 1px solid #d8d8d8;
+	border-bottom: 1px solid #bababa;
+	border-left: 1px solid #d8d8d8;
+}
+.secondarynav li, .tertiarynav li {
+	width: 158px;
+	padding: 7px 0px 7px 20px;
+	min-height: 14px;
+	border: 1px solid #fff;
+	border-top: 1px solid #d8d8d8;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.secondarynav li.level2{
+	background-color:#fff;
+}
+
+/*.secondarynav li {
+	background: #f1f1f1;
+}
+.secondarynav li.sub a {
+	padding-left: 20px;
+	color: #666;
+}
+.secondarynav li.header {
+	min-height: 44px;
+	padding: 0 10px 0 20px;
+	height: 44px;
+	border-top: 1px solid white;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #e75429;
+	display: table-cell;
+	vertical-align: middle;
+}
+*+html .secondarynav li.header {
+	height: auto !important;
+	padding: 9px 10px 9px 20px;
+}*/
+.tertiarynav li {
+	background: #ebebeb;
+	width: 158px;
+	padding-left: 20px;
+}
+.tertiarynav li.first {
+	border-top: 1px solid #fff;
+}
+.secondarynav li a, .tertiarynav li a {
+	font-size: 10px;
+}
+.secondarynav li:hover, .tertiarynav li:hover, .secondarynav li.selected, .tertiarynav li.selected {
+	background: #fff url('../imagesv2/background-liselected.png') no-repeat center right;
+	border-right: 1px solid #e5e5e5;
+}
+.secondarynav li:hover a, .tertiarynav li:hover a, .secondarynav li.selected a, .tertiarynav li.selected a{
+	color: #ec5828;
+}
+.secondarynav li a {
+	color: #000;
+}
+.tertiarynav li a {
+	color: #686868;
+}
+
+
+div#left_nav
+{
+	float: left;
+	display: inline;
+	margin: 0 10px 0 0;
+	width: 180px;
+	background-color: transparent;
+}
+
+#zz1_LeftNavMenu {
+	 background-color: transparent;
+
+}
+
+.zz1_LeftTopNav_4
+{
+	background: #f1f1f1;
+	min-height: 44px;
+	padding: 0 10px 0 20px;
+	height: 44px;
+	border-top: 1px solid white;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #e75429;
+	font-weight:600;
+	display: table-cell;
+	vertical-align: middle;
+	width: 180px;
+
+}
+.zz2_LeftNavMenu_4
+{
+	background: #f1f1f1;
+	min-height: 44px;
+	padding: 0 10px 0 20px;
+	height: 44px;
+	border-top: 1px solid white;
+	font-size: 11px;
+	font-weight:600;
+	text-transform: uppercase;
+	color: #e75429;
+	/*display: table-cell;*/
+	vertical-align: middle;
+	width: 180px;
+
+}
+
+.zz1_LeftTopNav_4 a
+{
+	color: #e75429;
+	font-size: 10px !important;
+}
+
+.nav_hidden, table.nav_hidden {
+	display: none;
+}
+
+#left_nav a img {
+	 display: none;
+}
+
+.zz1_tempmenu_2
+{
+	background: #fff url('../imagesv2/background-liselected.png') no-repeat center right;
+	min-height: 44px;
+	padding: 0 10px 0 20px;
+	height: 44px;
+	border-top: 1px solid white;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #e75429;
+	display: table-cell;
+	vertical-align: middle;
+	width: 180px;
+}
+
+.zz1_tempmenu_2 a
+{
+	color: #e75429;
+	font-size: 10px !important;
+}
+
+
+*+html .zz1_tempmenu_2 {
+	height: auto !important;
+	padding: 9px 10px 9px 20px;
+}
+
+.zz2_LeftNavMenu_4 a{
+	color: #000000;
+	font-size: 10px !important;
+}
+
+
+
+.zz2_LeftNavMenu_4:hover a{
+	color: #ec5828;
+}
+
+/****************************************/
+/*  NJW - styles for the menu control   */
+/****************************************/
+
+
+/* Level 1 Item (darkest blue with curved corner) */
+.nav1_1_selected, table.nav1_1_selected, {	
+	display: block;
+	padding: 10px 10px 9px 20px;
+	background: #2E64AE url(Images/common/left_nav_double_down_arrow.gif) no-repeat;
+	color: white;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 13px;
+	width: 160px;
+}
+
+.nav1_1, .nav2_1, .nav3_1, .nav4_1 {	
+	display: block;
+	padding: 10px 10px 9px 20px;
+	background: #2E64AE url(Images/common/left_nav_single_left_arrow.gif) no-repeat;
+	color: white;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 13px;
+	width: 160px;
+}
+.nav1_1_selected:hover {	
+	background: transparent url(Images/common/left_nav_double_down_arrow_hover.gif) no-repeat;
+	color: white;
+}
+.nav1_1:hover, .nav2_1:hover, .nav3_1:hover, .nav4_1:hover {	
+	background: transparent url(Images/common/left_nav_single_left_arrow_hover.gif) no-repeat;
+	color: white;
+}
+
+
+/* Level 2 Item (medium-dark blue) */
+.nav2_2_selected {
+	background: #fff url('../imagesv2/background-liselected.png') no-repeat center right;
+}
+
+.nav2_2_hidden {
+	display: none;
+}
+
+/* Level 3 Item (medium blue) */
+.nav2_3, .nav4_3 {
+	border-bottom: solid 1px #E7E4E0;
+	background: #FFFFFF;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: normal;
+	font-size: 10px;
+	color: #666;
+	width: 140px;
+	display: block;
+	padding: 4px 5px 4px 15px;
+}
+
+.nav2_3
+{
+	border-bottom: solid 1px #E7E4E0;
+	background: #FFFFFF;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: normal;
+	font-size: 10px;
+	color: #666;
+	width: 120px;
+	display:block;
+	padding: 4px 5px 4px 20px;
+
+}
+
+.nav3_3
+{
+	border-bottom: solid 1px #E7E4E0;
+	background: #FFFFFF;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: normal;
+	font-size: 10px;
+	color: #666;
+	width: 130px;
+	display:block;
+	padding: 4px 5px 4px 10px;
+
+}
+
+/*table.nav2_2
+{
+	background: #e3f3fa;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: normal;
+	font-size: 10px;
+	color: #666;
+	display:block;
+	padding: 4px 5px 4px 10px;
+}
+
+table.nav2_2 a
+{
+	color: #666666;
+	padding-left: 10px;
+	display:block;
+		
+}*/
+
+.zz2_LeftNavMenu_6 {
+    background-color: #FFFFFF;
+	width: 178px !important;
+}
+.nav1_2_selected, .nav2_3_selected, .nav3_3_selected, .nav3_4_selected {
+	/*background: #fff url('../imagesv2/background-liselected.png') no-repeat center right;*/
+	color: #EC5828;
+
+}
+
+.nav2_3:hover, .nav3_3:hover, .nav4_3:hover, .nav3_4:hover {
+	background: #fff url('../imagesv2/background-liselected.png') no-repeat center right;
+	color: #EC5828;
+	display: block;
+}
+
+.nav2_3:hover a, .nav3_3_selected a, .nav3_3:hover a, .nav3_4:hover a, .nav4_3:hover a, .nav2_3_selected a, .nav3_4_selected a  {
+	background: 0 none;
+}
+
+
+table.nav3_4 {
+    border-color: #d8d8d8 #FFFFFF #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 10px;
+    min-height: 14px;
+    padding: 5px 0px 5px 40px;
+    background: #f4f6f7;
+    display: block;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+body:first-of-type table.nav2_3, table.nav3_3{
+	width: 147px!important; 
+}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+body:first-of-type table.nav3_4{
+	width: 137px!important; 
+}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+body:first-of-type table.nav4_4{
+	width: 147px!important; 
+}
+}
+
+
+
+
+table.nav3_4 a {
+	color: #666;
+}
+
+/* Level 4 Item (light gray) */
+.nav4_4 {
+	border-bottom: solid 1px #E7E4E0;
+	/*background: #F9F9F9;*/
+	background:#D4E3F6;
+	font-size: 10px;
+	line-height: 13px;
+	color: #777169;
+	/*width: 110px;*/
+	padding: 0px 5px 0px 30px;
+	display: block;
+}
+
+
+.nav5_4 {
+	border-bottom: solid 1px #E7E4E0;
+	background: #F9F9F9;
+	font-size: 11px;
+	line-height: 13px;
+	color: #777169;
+	width: 135px;
+	padding: 5px 5px 5px 50px;
+	display: block;
+}
+
+
+
+/* fix for Firefox */
+table.nav1_1, table.nav2_1, table.nav3_1, table.nav4_1,
+table.nav1_2, table.nav2_2, table.nav2_3, table.nav2_4, table.nav3_2, table.nav4_2,
+table.nav3_3, table.nav4_3, 
+table.nav4_4, table.nav5_4,
+table.nav1_1_selected, table.nav2_2_selected,
+table.nav3_3_selected, table.nav4_4_selected,
+table.nav2_3_selected{
+	width:180px;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #d8d8d8 #FFFFFF #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    min-height: 14px;
+    padding: 7px 10px 7px 20px;
+}
+
+/*table.nav1_1:hover, table.nav2_1:hover, table.nav3_1:hover, table.nav4_1:hover,
+table.nav1_2:hover > a, table.nav2_2:hover, table.nav3_2:hover, table.nav4_2:hover,
+table.nav2_3:hover, table.nav3_3:hover, table.nav4_3:hover, 
+table.nav3_4:hover, table.nav4_4:hover, table.nav5_4:hover,
+{
+
+	background: #fff url('../imagesv2/background-liselected.png') no-repeat center right;
+	border-right: 1px solid #e5e5e5;
+
+}*/
+
+table.nav1_2:hover, table.nav2_2:hover, table.nav2_2_selected:hover, table.nav2_2_selected, table.nav3_2:hover, table.nav3_2_selected, table.nav3_3_selected, 
+table.nav4_2:hover, table.nav2_4:hover, table.nav3_4_selected, table.nav2_3_selected
+{
+
+	background: #fff url('imagesv2/background-liselected.png') no-repeat center right;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+*+html table.nav1_2:hover, *+html table.nav2_2:hover, *+html table.nav2_3:hover{
+	border-right: 0px solid #e5e5e5;
+
+}
+
+table.nav2_2_selected a, table._selected a, table.nav3_4_selected a
+{
+	color: #ec5828;
+	background: #fff ;
+
+}
+
+/* Special nav style for Resources and News/Events at section page level */
+div.nav_special {
+	clear:both;
+	width: 190px;
+	border-bottom: solid 1px #E7E4E0;
+	display: block;
+}
+div.nav_special a {
+	font-size: 11px;
+	line-height: 13px;
+	display: block;
+	padding: 5px 5px 5px 20px;
+	width: 165px;;
+	height: 100%;
+	background: #F0F0F0;
+}
+div.nav_special a:hover {
+	background: #BBB1A5;
+	color: white;
+}
+div.nav_special a.selected {
+	background: #F0F0F0 url(Images/common/triangle_3A7DDA.gif) no-repeat 10px center;
+}
+div.nav_special a.selected:hover {
+	background: #BBB1A5 url(Images/common/triangle_white.gif) no-repeat 10px center;
+}
+
+
+
+/* Offerings A-Z Index */
+div#az_index {
+	display: none;
+	clear:both;
+}
+div#az_index a {
+	padding: 20px 5px 18px 20px;
+}
+
+
+
+/***********************************/
+/* end styles for the menu control */
+/***********************************/
+
+
+
+div#left_nav ul { list-style-type: none; }
+
+div#left_nav li
+{
+	display: none;
+	padding: 0 0px 0 0;
+	border-bottom: solid 1px #E7E4E0;
+}
+
+div#left_nav li.active_level0 { background: transparent url(../img/common/left_nav_double_down_arrow_hover.gif) no-repeat left top; }
+div#left_nav li.active_level1 { background: transparent url(../img/common/left_nav_single_left_arrow_hover.gif) no-repeat left top; }
+div#left_nav li.active_level0,
+div#left_nav li.active_level1,
+div#left_nav li.active_level2 { border-bottom: white; }
+
+div#left_nav li.active_level0,
+div#left_nav li.active_level0 ul li,
+div#left_nav li.active_level1,
+div#left_nav li.active_level1 li.active_level2,
+div#left_nav li.active_level1 li.active_level2 li,
+div#left_nav li.active_level1 ul.resource_list li { display: block; }
+div#left_nav li.active_level0 ul li ul li { display: none; }
+div#left_nav li.active_level0, div#left_nav li.active_level1 { background-color: transparent; }
+
+div#left_nav li.active_level0 a, div#left_nav li.active_level1 a
+{
+	display: block;
+	float: left;
+	clear: both;
+	padding: 11px 20px 9px 20px;
+	width: 150px;
+	background: #3A7DDA url(../img/common/left_nav_double_down_arrow.gif) no-repeat;
+	color: white;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 11px;
+}
+
+div#left_nav li.active_level1 a { background: transparent url(../img/common/left_nav_single_left_arrow.gif) no-repeat; }
+div#left_nav li.active_level1 a:hover,
+div#left_nav li.active_level0 a:hover { background: none; color:white;}
+
+
+div#left_nav li a, 
+div#left_nav li.active_level1 li a,
+div#left_nav li.active_level0 li a
+{
+	display: block;
+	background: #F9F9F9;
+	padding: 5px 20px 5px 20px;
+	width: 150px;
+	font-size: 11px;
+	line-height: 15px;
+	color: #777169;
+	text-transform: none;
+	font-weight: normal;
+}
+
+div#left_nav li ul.active_level0_list li > a,
+div#left_nav li.active_level0 > a,
+div#left_nav li.active_level1 > a,
+div#left_nav li.active_level1 li.active_level2 a
+{
+	float: none;
+	clear: none;
+}
+/* IE Whitespace Bug http://www.hicksdesign.co.uk/journal/ie-whitespace-bug */
+div#left_nav li.active_level1 li.active_level2 a
+{
+	/*background: #3F88ED url(../img/common/double_triangles_down_white.gif) no-repeat 5px center;*/
+	color: white;
+	 	background: #fff url('../imagesv2/background-liselected.png') no-repeat center right;
+}
+
+div#left_nav li.active_level1 li.active_level2 a:hover
+{
+	background: #BBB1A5 url(../img/common/double_triangles_down_white.gif) no-repeat 5px center;
+	color: white;
+}
+
+div#left_nav li.active_level1 li.active_level2 ul li a{
+	background: #F9F9F9;
+	color: #777169;
+}
+div#left_nav li a:hover, 
+div#left_nav li.active_level0 li a:hover,
+div#left_nav li.active_level1 li.active_level2 ul li a:hover,
+div#left_nav li.active_level1 li.active_level2 ul li.active_level3 a,
+div#left_nav li.active_level1 li.active_level3 a,
+div#left_nav li.active_level1 ul.resource_list li a:hover,
+div#left_nav li.active_level1 li.active
+{
+	background: #E3F3FA;
+	color: #333;
+}
+

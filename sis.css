@@ -1,0 +1,108 @@
+/* CSS Document */
+h3,h2{
+color:#1a8cce;
+}
+td,th{
+text-align:left;
+padding:8px;
+color:#000;
+}
+th{
+text-align:left;
+padding:8px;
+background-color:#A8E2FF;
+}
+p.bk{
+background-color:#EBEBEB;
+color:#000000;
+height:auto;
+line-height:25px;
+padding:5px;
+}
+.th1{
+background-color:#DDF4FF;
+color:#000;
+}
+
+.student_login{
+	width:300px;
+	position:relative;
+	border:#999999 solid;
+	margin-right: auto;
+	margin-left: auto;
+	color:#000000;
+	z-index: 10px;
+	box-shadow: 5px 5px 5px #888888;
+	margin-top: 50px;
+}
+
+.student_quiz_sys{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	border:#999999 solid;
+	color:#000000;
+	z-index:10px;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #888888;
+	margin-bottom: 20px;
+
+}
+.student_attendence{
+	width:80%;
+	position:relative;
+	text-align:center;
+	/*margin-right: auto;
+	margin-left: auto;*/
+	color:#000000;
+	z-index: 10;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.css3button11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	padding: 0px 0px;
+	background: -moz-linear-gradient(
+		top,
+		#1a8cce 0%,
+		#1a8cce);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#1a8cce),
+		to(#1a8cce));
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	border: 3px solid #0275cc;
+	-moz-box-shadow:
+		3px 3px 2px rgba(040,040,041,0.7),
+		inset 0px 0px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+		3px 3px 2px rgba(040,040,041,0.7),
+		inset 0px 0px 0px rgba(255,255,255,0);
+	box-shadow:
+		3px 3px 2px rgba(040,040,041,0.7),
+		inset 0px 0px 0px rgba(255,255,255,0);
+	text-shadow:
+		-1px -1px 40px rgba(000,000,000,0.8),
+		0px 1px 0px rgba(255,255,255,1);
+}
+.studenthome
+{
+	width:450px;
+	font-size:14px;
+	line-height:25px;
+	position:relative;
+	border:#999999 solid;
+	margin-right: auto;
+	margin-left: auto;
+	color:#000000;
+	z-index: 10;
+	box-shadow: 5px 5px 5px #888888;
+	padding: 10px;
+}

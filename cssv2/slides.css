@@ -1,0 +1,155 @@
+﻿/*
+	Load CSS before JavaScript
+*/
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+#homeslidesimage {
+	position: absolute;
+	top: 210px;
+	left: 2px;
+	z-index: 1;
+	padding-top: 0;
+}
+	
+*+html #homeslidesimage 
+{
+	overflow: hidden;
+	background: transparent url('../imagesv2/background-theater.png') repeat-x left top;
+}
+
+#homeslidesimage .slides_container {
+	width: 960px;
+	height: 320px;
+	overflow: hidden;
+	display: block;
+	background: transparent url('../imagesv2/background-theater.png') repeat-x left top;
+
+}
+
+*+html #homeslidesimage .slides_container {
+	background: transparent url('../imagesv2/background-theater.png') repeat-x left top;
+
+}
+
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+#homeslidesimage .slides_container > div {
+	width:960px;
+	height:495px;
+	display:block;
+	margin-left: -1px;
+	/*overflow: hidden;*/
+}
+
+
+.slidepagination {
+	position: absolute;
+	top: 280px; 
+	left: 808px;
+	z-index:99;
+	margin-left: 0;
+}
+
+*+html .slidepagination 
+{
+	top: 290px;
+	padding-left: 40px;
+}
+.slidepagination li {
+	margin-right: 12px;
+	list-style: none;
+	float: left;
+}
+.slidepagination li a {
+	background: url('../imagesv2/icon-dotsnew.png');
+	width: 9px;
+	height: 8px;
+	display: block;
+	text-indent: -9999px;
+/*	background-color:#fff;*/
+}
+.slidepagination li.current a {
+	background-position: -9px 0;
+}
+/* Home modules */
+#homemodule1 {
+
+		}
+#homemodule1.slides_container {
+	width:275px;
+	margin-right: 20px;
+	display:none;
+	overflow: hidden;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+#homemodule1.slides_container div {
+	width:275px;
+	height:152px;
+	display:block;
+	
+}
+
+#homemodule2.slides_container
+{
+	left: 7px;
+	display: block;
+}
+
+#homemodule2.slides_container div {
+	width:278px;
+	height:152px;
+	display:block;
+}
+
+/* Prev next */
+ul.homemodules > li > div {
+	position: relative;
+	width: 280px;
+}
+ul.homemodules > li > div > .prev {
+	position: absolute;
+	top: 135px;
+	left: 205px;
+	width: 29px;
+	height: 29px;
+	background: url('../imagesv2/icon-modulearrows.png');
+	display: block;
+	text-indent: -9999px;
+	z-index: 100;
+}
+
+
+
+ul.homemodules > li > div .next {
+	position: absolute;
+	top: 135px;
+	left: 246px;
+	width: 29px;
+	height: 29px;
+	background: transparent url('../imagesv2/icon-modulearrows.png') no-repeat -29px 0px;;
+	text-indent: -9999px;
+	z-index: 100;
+}
+
+.slides_control{
+	height: 102px !important;
+
+}
